@@ -1,5 +1,5 @@
 {
-    "name": "f-oris/easy-bytedance-miniapp",
+    "name": "smhsw/easy-bytedance-miniapp",
     "description": "字节跳动小程序SDK",
     "keywords": [
         "byte dance",
@@ -33,7 +33,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "EasyByteDance\\MiniApp\\Tests\\": "tests/"
+            "Smhsw\\MiniApp\\Tests\\": "tests/"
         }
     },
     "scripts": {
