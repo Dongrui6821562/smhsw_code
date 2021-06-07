@@ -111,11 +111,15 @@ class Encryptor extends Component
      */
     public function decryptData(string $sessionKey, string $iv, string $encrypted): array
     {
+
+
         $plainText = openssl_decrypt(
             base64_decode($encrypted), $this->method, base64_decode($sessionKey), $this->options, base64_decode($iv)
         );
 
+
         $decryptData = json_decode($this->pkcs7Unpad($plainText), true);
+
 
         if ($decryptData == false) {
             throw new DecryptException('The given payload is invalid.');
