@@ -6,19 +6,19 @@ use Foris\Easy\Sdk\ServiceContainer;
 use Foris\Easy\Sdk\Providers\ConfigProvider;
 use Foris\Easy\Sdk\Providers\CacheProvider;
 use Foris\Easy\Sdk\Providers\LoggerProvider;
-use EasyByteDance\MiniApp\Http\ServiceProvider as HttpClientProvider;
+use Smhsw\MiniApp\Http\ServiceProvider as HttpClientProvider;
 
 /**
  * Class Application
  *
- * @property \EasyByteDance\MiniApp\Auth\Auth                       $auth
- * @property \EasyByteDance\MiniApp\Auth\AccessToken                $access_token
- * @property \EasyByteDance\MiniApp\AppCode\AppCode                 $app_code
- * @property \EasyByteDance\MiniApp\Encryptor\Encryptor             $encryptor
- * @property \EasyByteDance\MiniApp\TemplateMessage\TemplateMessage $template_message
- * @property \EasyByteDance\MiniApp\ContentSecurity\ContentSecurity $content_security
- * @property \EasyByteDance\MiniApp\UserStorage\UserStorage         $user_storage
- * @property \EasyByteDance\MiniApp\Server\Server                   $server
+ * @property \Smhsw\MiniApp\Auth\Auth                       $auth
+ * @property \Smhsw\MiniApp\Auth\AccessToken                $access_token
+ * @property \Smhsw\MiniApp\AppCode\AppCode                 $app_code
+ * @property \Smhsw\MiniApp\Encryptor\Encryptor             $encryptor
+ * @property \Smhsw\MiniApp\TemplateMessage\TemplateMessage $template_message
+ * @property \Smhsw\MiniApp\ContentSecurity\ContentSecurity $content_security
+ * @property \Smhsw\MiniApp\UserStorage\UserStorage         $user_storage
+ * @property \Smhsw\MiniApp\Server\Server                   $server
  */
 class Application extends ServiceContainer
 {
@@ -38,13 +38,13 @@ class Application extends ServiceContainer
      * @var array
      */
     protected $providers = [
-        \EasyByteDance\MiniApp\Auth\ServiceProvider::class,
-        \EasyByteDance\MiniApp\Encryptor\ServiceProvider::class,
-        \EasyByteDance\MiniApp\AppCode\ServiceProvider::class,
-        \EasyByteDance\MiniApp\TemplateMessage\ServiceProvider::class,
-        \EasyByteDance\MiniApp\ContentSecurity\ServiceProvider::class,
-        \EasyByteDance\MiniApp\UserStorage\ServiceProvider::class,
-        \EasyByteDance\MiniApp\Server\ServiceProvider::class,
+        \Smhsw\MiniApp\Auth\ServiceProvider::class,
+        \Smhsw\MiniApp\Encryptor\ServiceProvider::class,
+        \Smhsw\MiniApp\AppCode\ServiceProvider::class,
+        \Smhsw\MiniApp\TemplateMessage\ServiceProvider::class,
+        \Smhsw\MiniApp\ContentSecurity\ServiceProvider::class,
+        \Smhsw\MiniApp\UserStorage\ServiceProvider::class,
+        \Smhsw\MiniApp\Server\ServiceProvider::class,
     ];
 
     /**

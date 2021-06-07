@@ -2,7 +2,7 @@
 
 namespace Smhsw\MiniApp\Http;
 
-use EasyByteDance\MiniApp\Application;
+use Smhsw\MiniApp\Application;
 use Foris\Easy\HttpClient\ResponseHandler;
 
 /**
@@ -61,7 +61,7 @@ class HttpClient extends \Foris\Easy\HttpClient\HttpClient
      * @param string $method
      * @param array  $options
      * @return mixed
-     * @throws \EasyByteDance\MiniApp\Exceptions\ResponseException
+     * @throws \Smhsw\MiniApp\Exceptions\ResponseException
      * @throws \Foris\Easy\Cache\InvalidConfigException
      * @throws \Foris\Easy\Cache\RuntimeException
      * @throws \GuzzleHttp\Exception\GuzzleException
